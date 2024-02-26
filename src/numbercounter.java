@@ -4,10 +4,10 @@ public class numbercounter {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        int myNum =0;
+        int myNum = 0;
         String trash = "";
 
-       do {
+       while(true) {
             System.out.println("give me a number");
             if(in.hasNextInt()){
                 in.nextInt();
@@ -19,15 +19,15 @@ public class numbercounter {
                 System.out.println("you gave me trash" +trash);
                 break;
             }
-        } while(true);
+        }
 
-        if (myNum <=9){
-            myNum = in.nextInt();
+        if (myNum <= 9){
+
             System.out.println("you gave me a single int");
 
         }
         else if (myNum <= 99){
-            myNum = in.nextInt();
+
             System.out.println("you gave me a double int");
         }
         else{
