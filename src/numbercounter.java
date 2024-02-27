@@ -7,10 +7,11 @@ public class numbercounter {
         int myNum = 0;
         String trash = "";
 
-       while(true) {
+       do {
             System.out.println("give me a number");
             if(in.hasNextInt()){
-                in.nextInt();
+                myNum = in.nextInt();
+
                 break;
             }
             else{
@@ -19,9 +20,11 @@ public class numbercounter {
                 System.out.println("you gave me trash" +trash);
                 break;
             }
-        }
+        }while(true);
+
 
         if (myNum <= 9){
+
 
             System.out.println("you gave me a single int");
 
